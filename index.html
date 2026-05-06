@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Product Showcase Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Product Showcase</h1>
+            <p>Curate your beautiful collection of favorite products.</p>
+        </header>
+
+        <section class="form-container glass-panel">
+            <form id="product-form">
+                <div class="input-group">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" placeholder="e.g., Minimalist Desk Lamp" required>
+                </div>
+                <div class="input-group">
+                    <label for="image-url">Image URL</label>
+                    <input type="url" id="image-url" placeholder="https://example.com/image.jpg" required>
+                </div>
+                <div class="input-group">
+                    <label for="product-link">Product Link</label>
+                    <input type="url" id="product-link" placeholder="https://example.com/product" required>
+                </div>
+                <button type="submit" class="btn-primary">✨ Add Product</button>
+            </form>
+        </section>
+
+        <section class="showcase">
+            <div id="empty-state" class="empty-state glass-panel">
+                <p>No products yet. Add your first aesthetic find above! 🌸</p>
+            </div>
+            
+            <main id="product-grid" class="product-grid">
+                <!-- Product cards will be injected here by JavaScript -->
+            </main>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
