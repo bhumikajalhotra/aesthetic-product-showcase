@@ -442,3 +442,12 @@ header p {
         border-color: #ef4444;
     }
 }
+
+.product-counter {
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 1rem;
+}
